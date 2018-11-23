@@ -1,0 +1,23 @@
+{
+  "name": "reactapp",
+  "version": "1.0.0",
+  "description": "server side code structure with express",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix clients",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix clients",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "ajith",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.5",
+    "nodemon": "^1.18.4"
+  }
+}
